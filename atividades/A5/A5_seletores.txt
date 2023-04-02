@@ -1,0 +1,28 @@
+ATIVIDADE 5
+SELETORES CSS:
+1)	Plate
+2)	Bento
+3)	#fancy
+4)	Plate apple
+5)	#fancy pickle
+6)	.small
+7)	Orange.small
+8)	Bento Orange.small
+9)	Plate, bento
+10)	*
+11)	Plate *
+12)	Plate + apple
+13)	Bento ~ pickle
+14)	Plate > apple
+15)	Plate :first-child
+16)	Plate :Only-child
+17)	#fancy apple:last-child, pickle
+18)	Plate:nth-child(3)
+19)	Bento:nth-last-child(4)
+20)	Apple:first-of-type
+21)	Plate:nth-of-type(even)
+22)	Plate:nth-of-type(2n+3)
+23)	Plete apple:Only-of-type
+24)	Orange:last-of-type, apple:last-of-type
+25)	Bento:emptly
+26)	Apple:not(.small)
