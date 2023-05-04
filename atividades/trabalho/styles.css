@@ -1,0 +1,227 @@
+/* global*/
+:root{
+    /* varivel para ser usado en todo usando o --var*/
+    --color--usado: rgb(81, 81, 238);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93.75%;
+}
+
+/*corpo */
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+/*titulos */
+h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color--usado);
+    font-weight: normal;
+}
+
+body{
+    background: rgb(226, 226, 243);
+    font-family: "Poppins", sans-serif;
+}
+/*cabecalho*/
+header{
+    background: rgb(236, 49, 105);
+    /*borda */
+    padding: 3rem 3rem 4rem 5rem;
+    text-align: center;
+}
+
+#logo{
+    color: white;
+    font-weight: 100;
+}
+#balance{
+    margin-top: -3rem;
+
+}
+#balance h2{
+    color: white;
+    margin-top: 0;
+}
+.card{
+    background: white;
+    padding: 2rem, 2rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    color: rgb(223, 236, 104);
+}
+.card h3{
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 0rem 0rem 0rem 1rem ;
+   /* color:rgb(223, 236, 104);
+   align-items: center;*/
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.card p{
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    padding: 0rem 0rem 0rem 1rem;
+
+}
+.card.saldo{
+    background: rgb(21, 163, 92);
+    color: rgb(221, 221, 11);
+}
+/* link e button*/
+a{
+    color:rgb(21, 163, 92);
+    text-decoration: none;
+    
+
+
+}
+a:hover{
+    color:rgb(32, 238, 43);
+
+}
+.button.invest{
+    background: rgb(255, 135, 135);
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black; 
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.button{
+    cursor: pointer;
+    border-radius: 0.25rem;
+    
+}
+.button.new{
+    display: inline-block;
+    margin-bottom: .8rem;
+    
+}
+/*tabela */
+#transaction{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+#data-table{
+    
+    width:100% ;
+    color:rgb(184, 112, 6);
+    border-spacing: 0 0 5rem;
+   
+}
+table thead tr th:first-child,
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead th{
+    background: white;
+
+    color: var(--color--usado);
+    font-weight: normal;
+    padding: 1rem 1.5rem;
+    text-align: left;
+}  
+
+table tbody tr{
+    opacity: 0.7;
+} 
+
+table tbody tr:hover{
+    opacity: 1;
+}
+
+table tbody td{
+    background: white ;
+    padding: 1rem 2rem;
+    
+}
+td.description{
+    color: var(--color--usado);
+}
+td.expense{
+    color:rgb(233, 69, 69) ;
+}
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background-color: rgb(243, 234, 234);
+    padding: 2.4rem;
+   position: relative;
+}
+
+#form{
+    max-width: 500px;
+}
+#form h2{
+    margin-top: 0%;
+}
+input{
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8;
+    width: 100% ;
+}
+.input-group {
+    margin-top: 0.8 ;
+}
+.input-group small{
+    opacity: 0.4;
+}
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+footer{
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--color--usado);
+    
+}
+@media (min-width: 800px) {
+    html{
+        font-size: 87.5%;
+    }
+    #balance{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
