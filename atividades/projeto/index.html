@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/128/coin-us-dollar-icon.png" width="128" height="128" type="image/x-icon">
+    
+    <title>Correct Exchange</title>
+</head>
+<body>
+    <main class="container">
+        
+        <header class="header">
+            
+            <a href="#" class="logo">
+                <img src="imagens/logo.png" alt="corret exchange" width="150px">
+            </a>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li ><a href="#">NOSSAS OFICINAS</a></li>
+                    <li ><a href="#">CAMBIO DE MOEDA</a></li>
+                    <li ><a href="#">CAMBIO E TRANSFERENCIAS</a></li>
+                    <li ><a href="#">FAZER LOGIN</a></li>
+                </ul>
+
+                </nav>
+                <nav class="redes-sociais">
+                <a href="#" ><img src="./imagens/facebook.png" alt="" title="Facebook" width="30px"></a>
+                <a href="#" ><img src="./imagens/Blog.png" alt="" title="Blog" width="30px"></a>
+                <a href="#" ><img src="./imagens/Instagram.png" alt="" title="Instagram" width="30px"></a>
+                <a href="#" ><img src="./imagens/Twitter.png" alt="" title="Twitter" width="30px"></a>
+                <a href="#" ><img src="./imagens/YouTube.png" alt="" title="YouTube" width="30px"></a>
+            </nav>
+
+        </header>
+
+
+
+        <main class="container-menu">
+            <article class="content">
+                <h1>Correct Exchange, o cambio  de Moeda Seguro. <br>
+                Compra e faça a sua reserva Online o <br> pelo telefone, temos a moeda 
+                que <br> voçe busca.
+                </h1>
+                <p>Rapido <br> Facil <br> Seguro, o melhor preço online garantizado</p>
+            </article>
+            <article class="content">
+                <div id="currencyConverter">
+                    <div class="title"></div>
+                        <h1>CONVERSOR DE MOEDA</h1>    
+                    
+                    <form id="convertForm">
+                    <div class="currencies">
+                        <label for="amount"> VALOR</label>
+                        <input type="number" 
+                            id="amount" 
+                            placeholder="valor a ser cambiado"
+                            value="" > 
+                    </div> 
+                    <div>
+                            <label for="fromCurrency">DE (moeda)</label>
+                            <select id="fromCurrency"></select>
+                    </div>
+                    <div>
+                             <label for="toCurrency">PARA (moeda)</label>
+                             <select id="toCurrency"></select>
+                    </div>
+                        <button>CONVERTER</button>
+                    </form>
+                    <div id="convertResult"></div>
+                </div>
+            </article>
+        </main>
+
+       
+            <article class="content-descricao">
+                <nav id="content-menu">
+                    <h1>Como cambiar moeda online em Corret exchange </h1>
+                    <p>4 practicos pasos para fazer o cambio de moeda online <br> para facer um Gasto Inteligente</p>
+                
+                </nav>  
+                <nav id="content-menu-list"> 
+                    <div class="content-menu-list-item" >
+                            <a href="#carrosel-1" ><img src="imagens/cesta.png" alt="cesta"> Seleção</a>
+                    </div>
+                    <div class="content-menu-list-item">
+                            <a href="#carrosel-2" ><img  src="imagens/entrega.png" alt="cartao">Dados de Envio</a>
+                    </div>
+                    <div class="content-menu-list-item">
+                            <a href="#carrosel-3" ><img  src="imagens/cartao.png" alt="cartao">Pagamento</a>
+                    </div>
+
+                    <div class="content-menu-list-item">
+                            <a href="#carrosel-4" ><img src="imagens/reembolso.png" alt="moeda sobrante">Moeda Sobrante</a>
+                    </div>
+                </nav>
+                <div id="content-carrosel">
+                    <div class="carrosel">
+                        
+                        <div class="carrosel-item" id="carrosel-1">
+                            <img src="imagens/cesta.png" alt="cesta">
+                            <h1 class="descricao-titulo">SELEÇÃO DE MOEDA</h1>
+                            <p>Selecionar no conversor a moeda estrangeira que <br> desejas comprar ou el Pais de destino 
+                            ao qual faras a viagem e depois indica <br> a quantidade a ser cambiado. </p>
+                        </div> 
+                        <div class="flechasCarrosel"><i></i></div>
+                    
+                    </div>
+                    <div class="carrosel">
+                        
+                        <div class="carrosel-item" id="carrosel-2">
+                            <img src="imagens/entrega.png" alt="dados">
+                            <h1 class="descricao-titulo">DADOS DE ENVIO</h1>
+                            <p>Indica onde e quando quieres que seja feito a entrega <br>
+                            da moeda estrangeira. Envio em 24 a 48 horas.</p>
+                        </div> 
+                        <div class="flechasCarrosel"><i></i></div>
+                    
+                    </div>
+                    <div class="carrosel">
+                        
+                        <div class="carrosel-item" id="carrosel-3">
+                            <img src="imagens/cartao.png" alt="cartao">
+                            <h1 class="descricao-titulo">DADOS DE PAGAMENTO</h1>
+                            <p>Completa teus dados e seleciona o metodo de  pagamneto <br> :
+                                Cartao de debito, transferencia ou en dinheiro</p>
+                        </div> 
+                        <div class="flechasCarrosel"><i></i></div>
+                    
+                    </div>
+                    <div class="carrosel">
+                        
+                        <div class="carrosel-item" id="carrosel-4">
+                            <img src="imagens/reembolso.png" alt="sobrante">
+                            <h1 class="descricao-titulo">MOEDA SOBRANTE</h1>
+                            <p>Se nao conseguiste gastar todo toda a moeda estrangeira cambiada, <br>
+                            poderas fazer a devoluçao ate  50% ao mesmo preço da compra. </p>
+                        </div> 
+                        <div class="flechasCarrosel"><i></i></div>
+                    
+                    </div>
+                    
+                </div>
+            
+            </article>
+        
+            <div class="footer-wrapper">
+                <footer class="footer">
+                    <section class="footer-list">
+                        <a href="#" class="logo-footer">
+                            <img src="imagens/logo.png" alt="corret exchange" width="75px">
+                        </a>
+                    </section>
+                    <section class="footer-list">
+                        <h4 class="footer-list-title">Telefone</h4>
+                        <p class="footer-list-texto">0800 1212 1212</p>
+                    </section>
+                    <section class="footer-list">
+                        <h4 class="footer-list-title">Email</h4>
+                        <p class="footer-list-texto">corret.exchange@com.br</p>
+                    </section>
+                </footer>
+            </div>
+
+        </main>
+    <script src="./script.js"></script>
+</body>
+</html>
+
